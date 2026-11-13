@@ -67,9 +67,14 @@ listes avec `key` · hook personnalisé · React Router (`NavLink`, `useParams`)
 
 ## Captures d'écran
 
-| Accueil | Ressources | Assistant |
-|---|---|---|
-| ![Accueil](docs/accueil.png) | ![Ressources](docs/ressources.png) | ![Assistant](docs/assistant.png) |
+### Accueil
+![Accueil](docs/acceuill.png)
+
+### Catalogue de ressources
+![Ressources](docs/ressource.png)
+
+### Assistant IA
+![Assistant IA](docs/api7.png)
 
 ## Auteurs
 
