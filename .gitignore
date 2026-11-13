@@ -1,0 +1,18 @@
+# Dépendances et build
+node_modules
+dist
+
+# Clés secrètes : ne jamais publier
+.env
+.env.local
+.env.*.local
+
+# Éditeur et système
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

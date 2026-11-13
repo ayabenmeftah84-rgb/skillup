@@ -1,0 +1,19 @@
+import { useState, useEffect } from 'react';
+
+// useState + persistance : lit au 1er rendu, réécrit à chaque changement
+export default function useLocalStorage(key, initial) {
+  const [value, setValue] = useState(() => {
+    try {
+      const saved = localStorage.getItem(key);
+      return saved ? JSON.parse(saved) : initial;
+    } catch {
+      return initial;
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+
+  return [value, setValue];
+}
